@@ -1,24 +1,25 @@
 ﻿using NUnit.Framework;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
+using Assert = NUnit.Framework.Assert;
 
 namespace lab2_abhikadiya
 {
 
-    [TestClass]
+    [TestFixture]
     class NunitTestTriangle
     {
-        [TestMethod]
+        [Test]
         public void TestGetHypotenuse1()
         {
             Triangle obj = new Triangle();
             double result = obj.GetHypotenuse(30, 50);
             Assert.AreEqual(58.31, result);
+
         }
 
 
 
-        [TestMethod]
+        [Test]
         public void TestGetHypotenuse2()
         {
             Triangle obj = new Triangle();
@@ -26,7 +27,7 @@ namespace lab2_abhikadiya
             Assert.AreEqual(11.99, result);
         }
 
-        [TestMethod]
+        [Test]
         public void TestGetArea1()
         {
             Triangle obj = new Triangle();
@@ -34,7 +35,7 @@ namespace lab2_abhikadiya
             Assert.AreEqual(100, result);
         }
 
-        [TestMethod]
+        [Test]
         public void TestGetArea2()
         {
             Triangle obj = new Triangle();
@@ -42,7 +43,7 @@ namespace lab2_abhikadiya
             Assert.AreEqual(123.90, result);
         }
 
-        [TestMethod]
+        [Test]
         public void TestAngle1()
         {
             Triangle obj = new Triangle();
@@ -50,7 +51,7 @@ namespace lab2_abhikadiya
             Assert.AreEqual(50.00, result);
         }
 
-        [TestMethod]
+        [Test]
         public void TestAngle2()
         {
             Triangle obj = new Triangle();
