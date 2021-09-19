@@ -49,5 +49,13 @@ namespace lab2_abhikadiya
             double result = obj.GetAngle(50, 80);
             Assert.AreEqual(50.00, result);
         }
+
+        [TestMethod]
+        public void TestAngle2()
+        {
+            Triangle obj = new Triangle();
+            double result = obj.GetAngle(40.54, 55.90);
+            Assert.AreEqual(83.56, result);
+        }
     }
 }
