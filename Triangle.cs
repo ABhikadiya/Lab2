@@ -13,5 +13,10 @@ namespace lab2_abhikadiya
 
             return Math.Round(Math.Sqrt(Math.Pow(side1, 2) + Math.Pow(side2, 2)), 2);
         }
+
+        public double GetArea(double side1, double side2)
+        {
+            return 0.5 * (side1 * side2);
+        }
     }
 }
