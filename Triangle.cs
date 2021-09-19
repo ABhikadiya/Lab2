@@ -18,5 +18,10 @@ namespace lab2_abhikadiya
         {
             return 0.5 * (side1 * side2);
         }
+
+        public double GetAngle(double angle1, double angle2)
+        {
+            return 180 - (angle1 + angle2);
+        }
     }
 }
